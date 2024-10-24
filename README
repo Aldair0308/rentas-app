@@ -1,0 +1,18 @@
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Switch } from 'react-native';
+import { useTheme } from './../hooks/UseTheme'; // Importa el hook useTheme
+import ListGastos from '../components/ListGastos';
+
+const DepartamentoScreen = () => {
+  const { theme } = useTheme(); // Obtén el tema actual y la función para cambiarlo
+
+
+  return (
+    <View style={[theme.styles.container, { paddingHorizontal: 20, paddingTop: 20 }]}>
+      <View style={[theme.styles.containerSet, { paddingHorizontal: 20, paddingTop: 20 }]}>
+      </View>
+    </View>
+  );
+};
+
+export default DepartamentoScreen;
